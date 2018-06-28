@@ -7,7 +7,7 @@ gulp.task('watch', function () {
     server: {
       baseDir: 'app'
     },
-    browser: ['firefox']
+    browser: ['chrome']
   })
 
   watch('./app/index.html', function () {
