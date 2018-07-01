@@ -34,6 +34,7 @@ class StickyHeader {
           that.siteHeader.addClass("site-header--dark")
         } else {
           that.siteHeader.removeClass("site-header--dark")
+          that.headerLinks.removeClass("is-current-link")
         }
       }
     })
@@ -52,7 +53,7 @@ class StickyHeader {
           $(matchingHeaderLink).addClass("is-current-link")
           }
         },
-        offset: "18%"
+        offset: "17%"
       })
 
       new Waypoint({
@@ -64,7 +65,7 @@ class StickyHeader {
           $(matchingHeaderLink).addClass("is-current-link")
         }
         },
-        offset: "-40%"
+        offset: "-38%"
       })
     })
   }
